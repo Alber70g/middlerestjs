@@ -31,3 +31,21 @@ rest.on({ type: 'GET', model: 'user' }, function(model, context, dbFn) {
 app.use(rest);
 
 ```
+
+
+## Scratch pad
+
+Ik wil dat het framework op basis van conventies werkt de standaard acties voor GET, POST, PUT en DELETE (en evt `PATCH`) uitvoert als je geen andere middleware voor dat object hebt gemaakt
+ De standaard acties zijn bijvoorbeeld voor GET een SELECT query op de database en dan serialisatie voor de client naar JSON
+ POST een INSERT
+ voor DELETE een DELETE FROM ... WHERE ... enzovoorts
+ En dan als je een foreign key hebt, dat ie snapt dat wanneer je users/1/subscriptions dat je dan een join doet naar subscriptions
+ Bijvoorbeeld de tabel Subscriptions' heeft een foreign key naar `Users.id.
+En wanneer er `foreign key`'s beschikbaar zijn dat ie in het object wat ie terug stuurt de URL maakt voor die relatie:
+user: {
+  id: 1,
+  name: 'Albert',
+  subscriptions: {
+    url: 'users/1/subscriptions'
+  }
+}
