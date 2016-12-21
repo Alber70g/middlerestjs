@@ -1,0 +1,17 @@
+{
+  "name": "middlerestjs",
+  "version": "0.0.1",
+  "description": "Framework to provide a RestFull Api for any arbitrary database",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "knex": "^0.12.6",
+    "lodash": "^4.17.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Albert Groothedde",
+  "license": "MIT"
+}

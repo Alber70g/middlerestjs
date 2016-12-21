@@ -1,0 +1,25 @@
+{
+  "name": "middlerest-sample",
+  "version": "0.0.1",
+  "description": "Sample for MiddleRestJs",
+  "main": "sample.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "nodemon": "^1.11.0",
+    "pg": "^6.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon sample.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/eXor/middlerestjs.git"
+  },
+  "author": "Albert Groothedde",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/eXor/middlerestjs#readme"
+}
