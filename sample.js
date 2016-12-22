@@ -1,6 +1,6 @@
 var rest = require('./lib');
 
-rest.configure({
+var pgConfig = {
   client: 'pg',
   connection: {
     host: '127.0.0.1',
@@ -9,7 +9,19 @@ rest.configure({
     database: 'tododb'
   },
   pool: { min: 5, max: 150 }
-});
+};
+
+var mssqlConfig = {
+  client: 'mssql',
+  connection: {
+    host: '127.0.0.1',
+    user: 'sa',
+    password: 'root',
+    database: 'tododb'
+  },
+  pool: { min: 5, max: 150 }
+}
+rest.configure(pgConfig);
 
 // rest.seed([
 //     {
