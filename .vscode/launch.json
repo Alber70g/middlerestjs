@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}\\sample.js",
+            "program": "${workspaceRoot}/sample.js",
             "cwd": "${workspaceRoot}",
             "preLaunchTask": "start"
         },
