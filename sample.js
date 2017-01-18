@@ -4,7 +4,7 @@ var pgConfig = {
   client: 'pg',
   connection: {
     host: '127.0.0.1',
-    user: 'postgres',
+    user: 'albert',
     password: 'root',
     database: 'tododb'
   },
@@ -22,6 +22,12 @@ var mssqlConfig = {
   pool: { min: 5, max: 150 }
 }
 rest.configure(pgConfig);
+
+rest.on({ method: 'GET' }, (req, res, next) => {
+  console.log('before db');
+  next();
+  console.log('after db');
+})
 
 // rest.seed([
 //     {
