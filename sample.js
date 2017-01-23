@@ -28,7 +28,7 @@ rest.on({ method: 'GET' }, (req, res, next) => {
   console.log('executing next()');
   next();
   console.log('after db');
-})
+});
 
 // rest.seed([
 //     {
