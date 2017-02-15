@@ -1,7 +1,7 @@
 # middlerestjs
 
 ## Idea
-Read [here](/Alber70g/middlerestjs/blob/master/docs/idea.md) for the idea behind it
+Read [here](/docs/idea.md) for the idea behind it
 
 ## Get it running
 Very early stage of development. 
